@@ -1,19 +1,24 @@
 import React from 'react'
 import HeroImg from "../../public/image-hero-desktop.png"
+import HeroImgMobile from "../../public/image-hero-mobile.png"
 
 const Hero = () => {
     return (
-        <div className=' flex justify-between items-center w-[80%] bg-amber-400 mx-auto '>
-            <div className=' flex flex-col items-start gap-10 w-[70%] bg-green-400'>
-                <h1 className=' text-[8rem] font-[600] leading-18'>Make <br />
+        <div className=' bg-amber-200 sm:bg-green-400 md:bg-red-600 lg:bg-blue-600 xl:bg-purple-700 flex flex-col items-center mt-5 gap-6'>
+             <div className=' w-[80%]'>
+                <img src={HeroImgMobile} alt=""  className=' '/>
+            </div>
+            <div className=' flex flex-col justify-center text-center px-5 items-start gap-4 '>
+                <h1 className=' text-[3.5rem] font-[600] leading-18'>Make 
                     remote work</h1>
-                <p className=' text-3xl text-[#6d6d6d]'>
+                <p className=' text-2xl text-[#6d6d6d] leading-7 '>
                     Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-                <button className=' bg-black text-white rounded-xl py-4 px-7'>Learn more</button>
+                <button className=' bg-black mt-8 text-white rounded-xl py-4 px-7 mx-auto'>Learn more</button>
             </div>
-            <div className=' w-1/2'>
-                <img src={HeroImg} alt=""  className=' w-[50%]'/>
+            <div className=' hidden'>
+                <img src={HeroImg} alt=""  className=' '/>
             </div>
+           
         </div>
     )
 }
