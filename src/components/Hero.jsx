@@ -35,7 +35,7 @@ md:w-[70%] md:items-start md:text-left
        md:mx-0
        
        lg:mt-1'>Learn more</button>
-      <div className=' mt-10 md:w-16 gap-4 flex justify-evenly items-center'>
+      <div className=' hidden mt-10 md:w-16 gap-4 md:flex justify-evenly items-center'>
               <img src={One} alt="" />
               <img src={Two} alt="" />
               <img src={Three} alt="" />

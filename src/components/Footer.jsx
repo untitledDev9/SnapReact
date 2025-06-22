@@ -6,7 +6,7 @@ import Four from "../../public/client-maker.svg"
 
 const Footer = () => {
   return (
-    <div className=' md:hidden mt-14 flex bg-amber-400 justify-evenly items-center'>
+    <div className=' md:hidden mt-14 flex justify-evenly items-center'>
         <img src={One} alt="" />
         <img src={Two} alt="" />
         <img src={Three} alt="" />
